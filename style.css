@@ -1,0 +1,245 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: #3d3d3d;
+    font-family: 'Poppins';
+    background-color: #b8b8b8;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    letter-spacing:1px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    padding: 0px;
+    margin: 0;
+}
+.container{
+    width: 86%;
+    margin: 0% auto;
+    margin-top: 20px;
+    position: relative;
+}
+.topic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #b8b8b8;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.page_title{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.new_data{
+    background-color: #6dc306;
+    padding: 3px 12px;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.list_opt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons{
+    cursor: pointer;
+}
+
+/* table */
+table{
+    padding-bottom: 10px;
+    width: 100%;
+}
+th{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 12px;
+    color: #2D3C53;
+    background-color: #E2E8F0;
+    padding: 16px;
+}
+tr{
+    background-color: #ffffff;
+}
+tr:nth-child(2n){
+    background-color: #F6FAFF;
+}
+td{
+    padding: 16px;
+}
+th:nth-child(-n + 1){
+    border-top-left-radius: 16px;
+}
+th:nth-last-child(-n + 1){
+    border-top-right-radius: 16px;
+}
+tr:nth-last-child(-n + 1) td:nth-child(-n + 1){
+    border-bottom-left-radius: 16px;
+}
+tr:nth-last-child(-n + 1) td:nth-last-child(-n + 1){
+    border-bottom-right-radius: 16px;
+}
+/* end */
+
+
+/* pop up */
+.PopUp {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8000;
+    position: fixed;
+    margin: 0% auto;
+    overflow-y: auto;
+    background: #FFF;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 80%);
+    font-family: 'Inter';
+}
+.PopUp .all {
+    width: 512px;
+    height: auto;
+    display: flex;
+    text-align: center;
+    margin: 2em auto 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    overflow-y: hidden;
+    position: relative;
+    border-radius: 6px;
+}
+.PopUp .delete{
+    width: 400px;
+}
+.PopUp .div_data {
+    display: flex;
+    text-align: center;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    padding: 20px;
+}
+.PopUp .title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    flex-grow: 1;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #324d6b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.PopUp .close {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #324d6b;
+    font-size: 16px;
+    cursor: pointer;
+}
+.PopUp form{
+    width: 100%;
+}
+.PopUp .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.PopUp .div_input{
+    position: relative;
+}
+.PopUp input{
+    border: 2px solid #ebebeb;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'inter';
+    outline: none;
+    width: -webkit-fill-available;
+    background-color: #ffffff;
+}
+.PopUp .space_input{
+    flex-grow: 1;
+}
+.PopUp .name_input{
+    position: absolute;
+    left: 12px;
+    top: -11px;
+    padding: 0px 10px;
+    background-color: #ffffff;
+}
+.PopUp .date_birth{
+    width: 150px;
+}
+.PopUp .cpf{
+    width: 110px;
+    text-align: center;
+}
+.PopUp .phone{
+    width: 120px;
+    text-align: center;
+}
+.PopUp .div_contents {
+    background-color: #ffffff;
+    padding: 16px;
+}
+.PopUp .button {
+    padding: 0px 20px 20px;
+}
+.PopUp .button_save {
+    background-color: #76c57e;
+    padding: 4px 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register_data{
+    background-color: #7c9f06;
+    padding: 8px 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 16px;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+}
+.PopUp .opt_select{
+    width: 100px;
+    color: #ffffff;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.PopUp .yes_update {
+    background-color: #76c57e;
+}
+.PopUp .not_update {
+    background-color: #e95656;
+}
