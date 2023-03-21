@@ -156,7 +156,7 @@ $conectar->set_charset("utf8");
                             </div>
                         </div>
                         <div class="div_data" style="padding-top: 0">
-                            <div class="content">
+                            <div class="content" style="justify-content:center; flex-grow: 1">
                                 <a href="./register.php?acao=delete/${ id }">
                                     <div>
                                         <div class="opt_select yes_update">Sim</div>
